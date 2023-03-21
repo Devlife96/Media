@@ -1,0 +1,94 @@
+  .page-wrap:before{
+    transition: .3s all ease-in-out;
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+  }
+  .off-view .page-wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .off-view .page-wrap:before{
+    visibility: visible;
+  }
+  .mobile-view{
+    width: 250px;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+    padding-top: 20px;
+    border-left: 3px solid #35373b;
+    background: var(--dark-color);
+    height: calc(100vh);
+    transform: translate(110%);
+    transition: .3s all ease-in-out;
+  }
+  .off-view .mobile-view{
+    transform: translate(0%);
+  }
+  .mobile-view .mobile-view-header{
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mobile-view .mobile-view-header .mobile-view-close{
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+  .mobile-view .mobile-view-header .mobile-view-close i{
+    font-size: 25px;
+    color: #cfd6e2;
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+  }
+  .mobile-view .mobile-view-body{
+    overflow: scroll;
+    position: relative;
+    padding: 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+  .mobile-view .clone-view{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    padding:  10px 20px;
+  }
+  .mobile-view .clone-view a{
+  display: block;
+  position: relative;
+  font-weight: var(--font-weight-normal);
+  text-transform: capitalize;
+  color: #cfd6e2;
+  text-align: right;
+  font-size: 17px;
+  }
+  .mobile-view .clone-view .user-login-outline{
+    display: none;
+  }
+
+  .menu-block{
+    width:auto;
+    height:auto;
+    display: flex;
+  }
+ .menu-block .menu{
+    font-size: 25px;
+    color:#d0d7e3;
+    padding-right: 7px;
+  }

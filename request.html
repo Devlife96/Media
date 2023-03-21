@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Winshow</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <!-- Favicon -->
+     <link rel="icon" href="images/icons/fav.png">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/custom.css">
+     <link rel="stylesheet" href="css/request.css">
+</head>
+<style>
+
+
+</style>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<!-- Preloader -->
+<div id="preloader">
+    <div class="spinner">
+        <div></div>   
+        <div></div>    
+        <div></div>    
+        <div></div>    
+      </div>
+</div>
+<!-- /Preloader -->
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="interviews.html" class="nav-link smoothScroll">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link smoothScroll">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#class" class="nav-link smoothScroll">Interview Request</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Gellery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="modal.html" class="nav-link smoothScroll">Contact</a>
+                    </li>
+
+                </ul>
+
+                <ul class="social-icon ml-lg-3">
+                    <li class="nav-item"><a href=""  class="nav-link smoothScroll"> <i class="fa fa-money"></i> &nbsp; Support Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+<section class=" news section">
+    <div class="container">
+        <form id="regForm" action="">
+            <div class="row">
+                <div class="col-lg-12 py-5 col-md-12 col-12">
+                    <div class="wrapper" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="200">Request an Interviews</h2>
+                         <p data-aos="fade-up" data-aos-delay="200"> Fill the form</p>
+                         <div class="request">
+                    
+                    <div class="form-group">
+                        <div class="tab">
+                            <label for="">1. Firstname</label>
+                                <input type="text" name="newsletter" class="input form-control"  placeholder="Your Firstname">
+                                <button class=" pushNext" type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button>
+                        </div>
+                     </div>
+                    
+                    <div class="tab">
+                        <label for="">2. Lastname</label>
+                        <input type="text" name="newsletter" class="input form-control"  placeholder="Your Lastname">
+                        <button class=" pushNext" type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button>
+                     </div>
+                    
+                    <div class="tab">
+                      <label for="">3. Email</label>
+                      <input type="email" name="newsletter" class="input form-control"  placeholder="Email Adress">
+                      <button class=" pushNext" type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="tab">
+                        <label for=""> 4. Country</label>
+                        <input type="tel" name="newsletter" class="input form-control"  placeholder="Email Adress">
+                        <button class=" pushNext" type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="tab">
+                      <label for="">5. Date</label>
+                      <input type="date" name="newsletter" class="input form-control"  placeholder="Your Birth">
+                      <button class=" pushNext" type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    
+                    <!-- <div style="overflow:auto;">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-up"></i></button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button>
+                      </div>
+                    </div> -->
+                    
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:left;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--Other row-->
+         <div class="row">
+            <div class="col-lg-12 py-5 col-md-12 col-12">
+                <div class="footer-form">
+                    <div class="right"><button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-down"></i></button> </div>
+                    <div class="right"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-up"></i></button> </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</section>
+  
+
+       <!-- Footer Start -->
+       <div class="container-fluid site-footer text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="footer-log">
+                    <div class="logo"></div>
+                    <span class="logo-text">Winshow</span>
+                </div>
+                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <p class="footer-title mb-4">Links</p>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-link mb-1" href="#">Home</a>
+                    <a class="text-link mb-1" href="#">Interviews</a>
+                    <a class="text-link mb-1" href="#">News</a>
+                    <a class="text-link mb-1" href="#">Interviews Request</a>
+                    <a class="text-link mb-1" href="#">Gallery</a>
+                    <a class="text-link mb-1" href="#">Team</a>
+                    <a class="text-link mb-1" href="#">Support</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <p class="footer-title mb-4">Listen</p>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-link mb-1" href="#" >TuneIn</a>
+                    <a class="text-link mb-1" href="#">Anchor</a>
+                    <a class="text-link mb-1" href="#">Spotify</a>
+                    <a class="text-link mb-1" href="#">Overcast</a>
+                    <a class="text-link mb-1" href="#">SimpleRadio</a>
+                    <a class="text-link mb-1" href="#">Google Podcast</a>
+                    <a class="text-link mb-1" href="#">Apple Podcast</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <p class="footer-title mb-4">Follow</p>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-link mb-1" href="#" >Instagram</a>
+                    <a class="text-link mb-1" href="#">Facebook</a>
+                    <a class="text-link mb-1" href="#"></i>Tweeter</a>
+                    <a class="text-link mb-1" href="#">Yoytube</a>
+                    <a class="text-link mb-1" href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-5 d-flex justify-content-between" style="border-top: 0.5px solid #35373b;">
+            <p class="m-0 text-footer-footer">
+                Made with <i class="fa fa-heart heart-blue"></i> by <span><a href="">viactechnology</a></span>
+            </p>
+            <p class="footer-hashtag">#winshow</p>
+        </div>
+    </div>
+  
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/custom.min.js"></script>
+     <!-- <script src="js/bootstrap.min.js"></script> -->
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="js/popup.js"></script>
+     <script src="js/bootstrap-good.min.js"></script>
+     <script src="js/form.js"></script>
+
+</body>
+</html>

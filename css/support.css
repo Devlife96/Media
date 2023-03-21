@@ -1,0 +1,159 @@
+/*Support*/
+.support-section{
+    margin-top: 100px;
+  }
+
+  .support-section .help-outline{
+      width: 100%;
+      height: 350px;
+      border: 2px solid #35373b;
+      border-radius: 50%;
+      position: relative;
+  }
+
+  .support-section .help-outline .help-box{
+      width: 330px;
+      height: 330px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      background-color: #35373b;
+  }
+
+  .support-section .help-outline .help-box img{
+      max-width: 330px;
+      max-height: 330px;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+  }
+  .support-section .help-outline .help-box:hover{
+    background:linear-gradient(to right,#3987f4,#cd3178);
+    opacity: 1;
+    transition: .5s;
+  }
+
+  /*modal support*/
+  .support-box{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: opacity 300ms ease-in-out
+                top 1000ms ease-in-out
+                transform 1000ms ease-in-out;
+  }
+  .support-box .header-popup{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .support-box .content-button{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .support-box .content-button .first{
+    width: 40px;
+    height: 40px;
+    background-color:#494a4c;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  .support-box  .content-button .first:hover{
+  background: #535456;
+  color: #fff;
+  transition: all 400ms ease-in-out;
+  }
+  .support-box  .content-button .first i{
+    color: #d0d7e3;
+    font-size: 25px;
+  }
+  .support-box h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #d0d7e3;
+  }
+  .support-box .line-separator{
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid #494a4c;
+    margin-bottom: 15px;
+  }
+  .support-box  .dismiss{
+    
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .support-box  .dismiss button{
+    background: none;
+    border: none;
+    outline: none;
+    color: #d0d7e3;
+    cursor: pointer;
+  }
+
+
+  /*Order*/
+  .box-help-container{
+    max-width: 500px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+  }
+ .box-help-container .box-options{
+     width: 70px;
+     height: 70px;
+     background: #35373b;
+     border-radius: 50%;
+ }
+
+ .box-help-container .box-options img{
+     max-width: 70px;
+     max-height: 70px;
+     width: 100%;
+     height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 50%;
+     filter: grayscale(1);
+ }
+ .box-help-container .box-options img:hover{
+     filter: grayscale(0);
+     transition:all 400ms ease-in-out;
+ }
+ .help .reason-help-box{
+     width: 100%;
+     height: 350px;
+     background: #35373b;
+     border-radius: 20px;
+     padding: 20px;
+ }
+ .help .reason-help-box .reason-title h1{
+    font-size: 50px;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin: 10px 0;
+ }

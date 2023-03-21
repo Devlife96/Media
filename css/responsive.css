@@ -1,0 +1,72 @@
+
+  /*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+  @media screen and (max-width: 992px) {
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .nav-item .nav-link {
+      padding: 6px;
+    }
+
+    .navbar .social-icon {
+      margin-top: 22px;
+    }
+
+    .navbar-collapse,
+    .site-footer {
+      text-align: center;
+    }
+
+    .schedule-table {
+      display: block;
+    }
+
+    .modal-content {
+      padding: 2rem;
+    }
+   
+  }
+
+  @media screen and (max-width: 767px) {
+
+    h1 {
+      font-size: 38px;
+    }
+
+    .about-working-hours {
+      border-left: 0;
+      padding: 22px 0 0 0;
+    }
+
+    .contact h2 span {
+      display: block;
+    }
+    .display-view{
+        display: none;
+    }
+    .display-btn{
+        display: block;
+    }
+    .class,.news{
+        margin-top: -100px;
+    }
+    .navbar .social-icon {
+        background: transparent;
+    }
+    .navbar .social-icon li a{
+        
+        color: #cfd6e2;
+        font-size: var(--menu-font-size);
+        font-weight: var(--font-weight-normal);
+        text-transform: capitalize;
+    }
+    .navbar .user-login-outline{
+        display: none;
+    }
+  }
+
